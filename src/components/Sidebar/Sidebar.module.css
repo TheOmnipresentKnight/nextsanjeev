@@ -1,0 +1,40 @@
+/* Sidebar.module.css */
+.sidebar {
+    background-color: #9a9a9a;
+    width: 180px;
+    height: 100vh;
+    transition: width 0.3s ease;
+
+}
+
+.collapsed {
+    width: 40px;
+}
+
+.sidebar-item {
+    color: white;
+    padding: 10px;
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;    
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.sidebar-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar.collapsed .sidebar-item {
+    opacity: 0;
+}
+
+.toggleButton {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+}
