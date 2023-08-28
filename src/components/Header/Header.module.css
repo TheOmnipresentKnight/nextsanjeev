@@ -3,11 +3,11 @@
     background-color: rgb(154, 154, 154);
     padding: 0px 1rem 0px 1rem;
     display: flex;
-   position: sticky;
+    position: sticky;
     justify-content: space-between;
     align-items: center;
     color: white;
-height: auto;
+    height: auto;
 }
 
 .title {

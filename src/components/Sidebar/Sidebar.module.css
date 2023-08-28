@@ -4,11 +4,13 @@
     width: 180px;
     height: 100vh;
     transition: width 0.3s ease;
-
+    
+    
 }
 
 .collapsed {
-    width: 40px;
+    width: 0px;
+    
 }
 
 .sidebar-item {

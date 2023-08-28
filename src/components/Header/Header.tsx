@@ -1,6 +1,6 @@
 // Header.tsx
 import React, { useState } from 'react';
-import { OverlayTrigger, Popover, PopoverBody, PopoverHeader, Tooltip } from 'react-bootstrap';
+import { OverlayTrigger, Popover, PopoverBody, PopoverHeader, Row, Tooltip } from 'react-bootstrap';
 import styles from './Header.module.css';
 import { UserProfileIcon} from '../../shared/Icons'
 import BellIcon from '@/shared/BellIcon/BellIcon';
@@ -24,13 +24,11 @@ const Header: React.FC<HeaderProps> = ({ onToggleSidebarCollapse}) => {
   };
 
   const popover = (
-      <Popover id="user-popover"
-           
+      <Popover
+          id="user-popover" 
           placement="right"
           title="DS"
       >
-          
-      
         <PopoverBody
           className={styles.popoverItem}
           onClick={() => handlePopoverItemClick('edit profile')}
@@ -43,7 +41,6 @@ const Header: React.FC<HeaderProps> = ({ onToggleSidebarCollapse}) => {
         >
           Profile Settings
         </div>
-      
     </Popover>
   );
 
@@ -52,9 +49,10 @@ const Header: React.FC<HeaderProps> = ({ onToggleSidebarCollapse}) => {
   return (
       <div className={styles.header}>
           <h3 style={{cursor:"pointer"}} onClick={onToggleSidebarCollapse}>☰</h3>
-          <div className={styles.title}>Sanjeev Sample Next.js App</div>
+<div className={styles.title}>Sanjeev Sample Next.js App</div>
+<Row style={{justifyContent:"space-around", display:"flex", flexDirection:"row"}}>  
   
-              <div>
+              <div style={{marginRight:"3rem"}}>
                 <BellIcon notificationCount={notificationCount} />
       
           </div>
@@ -75,7 +73,8 @@ const Header: React.FC<HeaderProps> = ({ onToggleSidebarCollapse}) => {
             height="30"
           />
               </div>
-          </OverlayTrigger>
+          </OverlayTrigger></Row>          
+        
  
     </div>
   );

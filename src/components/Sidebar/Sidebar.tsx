@@ -16,9 +16,7 @@ const Sidebar: React.FC<SidebarProps> = ({collapsed}) => {
     
   return (
     <div className={`${styles.sidebar} ${collapsed ? styles.collapsed : ''}`}>
-      {/* <div className={styles.toggleButton} onClick={handleToggleCollapse}>
-        ☰
-      </div> */}
+
       <Nav defaultActiveKey="/home" className="flex-column">
         <Nav.Link href="/home" className={styles['sidebar-item']}>
           Home
