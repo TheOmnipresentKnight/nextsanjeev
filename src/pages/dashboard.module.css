@@ -1,0 +1,25 @@
+
+/* dashboard.module.css */
+
+.dashboard {
+    text-align: center;
+}
+
+.dashboard-heading {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.widget1 {
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 16px;
+    display: flex;
+    justify-content: space-around
+}
+.widget2 {
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 16px;
+}
+

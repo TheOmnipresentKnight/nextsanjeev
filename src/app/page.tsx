@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './page.module.css';
 
+
 export default function Home() {
   return (
       <section className={styles.main} style={{backgroundColor:"#020202"}}>
@@ -20,6 +21,9 @@ export default function Home() {
           <a href="https://www.example.com" className={styles.link}>
             Link 3
           </a> */}
+
+         
+                  
         </div>
       </div>
     </section>
