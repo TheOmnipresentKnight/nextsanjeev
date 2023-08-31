@@ -11,9 +11,7 @@ const Sidebar: React.FC<SidebarProps> = ({ collapsed }) => {
   return (
     <div className={`${styles.sidebar} ${collapsed ? styles.collapsed : ""}`}>
       <Nav defaultActiveKey="/home" className="flex-column">
-        <Nav.Link href="/home" className={styles["sidebar-item"]}>
-          Home
-        </Nav.Link>
+        <Nav.Link className={styles["sidebar-item"]}>Home</Nav.Link>
         <Nav.Link href="/about" className={styles["sidebar-item"]}>
           About
         </Nav.Link>

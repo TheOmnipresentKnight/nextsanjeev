@@ -1,21 +1,25 @@
 /* Sidebar.module.css */
+.sidebar-variables{
+ --sidebar-margin-top: 100px;
+ --sidebar-color: rgba(66, 180, 255);
+}
+
 .sidebar {
-    background-color: rgba(0, 95, 27, 0.8);
-    width: 140px;
-    height: 100vh;
-    transition: width 0.3s ease;
-    display:block;
-
-    position:sticky;
-    z-index: -1
     
-
+    background-color: rgba(66, 180, 255);
+    /* Adjust the width as needed */
+    position: fixed;
+    height: 90%;
+    width: 10%;
+    /* Fixed position to cover the whole left side */
+    left: 1;
+    transition: width 0.3s ease;
 }
 
 .collapsed {
-    width: 0px;
-    
+    width: 0;
 }
+
 
 .sidebar-item {
     color: white;

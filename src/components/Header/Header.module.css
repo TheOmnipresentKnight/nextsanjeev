@@ -1,20 +1,23 @@
 /* Header.module.css */
 .header {
-    background-color: rgb(154, 154, 154);
+    background-color: rgb(66, 180, 255);
     padding: 0px 1rem 0px 1rem;
     display: flex;
-    position: fixed;
-    width:208vh;
     justify-content: space-between;
     align-items: center;
     color: white;
+    position: sticky;
     height: auto;
-    top:0%;
-    left:0%
+    width: auto;
+    margin: 0px;
+    top: 0;
+    left: 0;
+
 }
 
+
 .title {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .userIcon {
